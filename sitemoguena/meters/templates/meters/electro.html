@@ -1,0 +1,86 @@
+{% extends 'meters/base.html' %}
+
+{% block content %}
+    <h2> Электроэнергия</h2>
+
+    Адрес: {{ address_name }} <br>
+    {% if indication|length > 0%}
+        Тариф: {{indication.0.tar.name}}
+    {% else %}
+        Тариф: не определен
+    {% endif %}
+     <br><br>
+
+    {% if indication|length > 0 %}
+        {% if indication.0.tar.number > 1 %}
+            <a href="{% url  'meters:add_electro'  address_slug %}">Добавить показание</a>
+        {% else %}
+            <a href="{% url  'meters:add_electro_dayly'  address_slug %}">Добавить показание</a>
+        {% endif %}
+    {% else %}
+        <a href="{% url  'meters:new_electro'  address_slug %}">Создать показание</a>
+    {% endif %}
+    <br>
+
+    <table class="table-meters">
+
+    {% if indication|length > 0%}
+        <th>Снято</th>
+        {% if indication.0.tar.number == 1 %}
+            <th>сутки</th>
+            <th>ИзмСутки </th>
+        {% else %}
+            <th>День</th>
+            <th>Ночь</th>
+            <th>ИзмДень </th>
+            <th>ИзмНочь </th>
+        {% endif %}
+
+    {% else %}
+        <th>Снято</th>
+        <th>сутки</th>
+        <th>День</th>
+        <th>Ночь</th>
+        <th>ИзмСутки </th>
+        <th>ИзмДень </th>
+        <th>ИзмНочь </th>
+    {% endif %}
+
+    {% if indication|length > 0%}
+        {% for tr in indication %}
+            <tr >
+                <td> <a href="{{ tr.get_absolute_url }}">{{tr.date_reading}} </a></td>
+                {% if indication.0.tar.number == 1 %}
+                    <td> {{tr.dayly}} </td>
+                    <td>
+                        {% if tr.difference %}
+                            {{ tr.difference.dayly }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                {% else %}
+                    <td> {{tr.daytime}} </td>
+                    <td> {{tr.nighttime}} </td>
+                    <td>
+                        {% if tr.difference %}
+                            {{ tr.difference.daytime }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if tr.difference %}
+                            {{ tr.difference.nighttime }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </table>
+
+
+{% endblock %}

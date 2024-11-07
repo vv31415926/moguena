@@ -1,0 +1,210 @@
+[
+{
+  "model": "meters.electro",
+  "pk": 37,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2023-06",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 710,
+    "date_reading": "2023-06-06",
+    "date_create": "2024-10-01T04:44:36.088Z",
+    "date_update": "2024-10-01T04:44:36.088Z",
+    "addr": 1,
+    "tar": 1,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 38,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2023-07",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 820,
+    "date_reading": "2023-07-04",
+    "date_create": "2024-10-01T04:47:56.876Z",
+    "date_update": "2024-10-01T04:47:56.876Z",
+    "addr": 1,
+    "tar": 1,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 39,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-06",
+    "nighttime": 8883,
+    "daytime": 42170,
+    "dayly": 0,
+    "date_reading": "2023-06-06",
+    "date_create": "2024-10-01T06:16:12.258Z",
+    "date_update": "2024-10-01T06:16:12.258Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 40,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-07",
+    "nighttime": 8911,
+    "daytime": 42309,
+    "dayly": 0,
+    "date_reading": "2023-07-04",
+    "date_create": "2024-10-01T06:38:44.130Z",
+    "date_update": "2024-10-01T06:38:44.130Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 41,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-08",
+    "nighttime": 8948,
+    "daytime": 42499,
+    "dayly": 0,
+    "date_reading": "2023-08-01",
+    "date_create": "2024-10-01T06:43:09.232Z",
+    "date_update": "2024-10-01T06:43:09.232Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 42,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-09",
+    "nighttime": 9006,
+    "daytime": 42758,
+    "dayly": 0,
+    "date_reading": "2023-09-25",
+    "date_create": "2024-10-01T06:45:29.338Z",
+    "date_update": "2024-10-01T06:45:29.338Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 43,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-10",
+    "nighttime": 9035,
+    "daytime": 42890,
+    "dayly": 0,
+    "date_reading": "2023-10-25",
+    "date_create": "2024-10-01T06:48:52.568Z",
+    "date_update": "2024-10-01T06:48:52.568Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 44,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-11",
+    "nighttime": 9071,
+    "daytime": 43032,
+    "dayly": 0,
+    "date_reading": "2023-11-25",
+    "date_create": "2024-10-01T06:52:53.610Z",
+    "date_update": "2024-10-01T06:52:53.610Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 45,
+  "fields": {
+    "slug": "chelyabinsk-pobedy-2023-12",
+    "nighttime": 9105,
+    "daytime": 43175,
+    "dayly": 0,
+    "date_reading": "2023-12-25",
+    "date_create": "2024-10-01T06:55:55.341Z",
+    "date_update": "2024-10-01T06:55:55.341Z",
+    "addr": 2,
+    "tar": 2,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 46,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2023-08",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 974,
+    "date_reading": "2023-08-01",
+    "date_create": "2024-10-01T06:58:26.754Z",
+    "date_update": "2024-10-01T06:58:56.564Z",
+    "addr": 1,
+    "tar": 1,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 47,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2023-09",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 1177,
+    "date_reading": "2023-09-25",
+    "date_create": "2024-10-01T07:01:59.193Z",
+    "date_update": "2024-10-01T07:01:59.193Z",
+    "addr": 1,
+    "tar": 1,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 48,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2024-01",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 1595,
+    "date_reading": "2024-01-24",
+    "date_create": "2024-10-01T07:05:08.547Z",
+    "date_update": "2024-10-01T07:05:08.547Z",
+    "addr": 1,
+    "tar": 1,
+    "author": null
+  }
+},
+{
+  "model": "meters.electro",
+  "pk": 49,
+  "fields": {
+    "slug": "chelyabinsk-marchenko-2024-02",
+    "nighttime": 0,
+    "daytime": 0,
+    "dayly": 1717,
+    "date_reading": "2024-02-24",
+    "date_create": "2024-10-07T12:13:42.930Z",
+    "date_update": "2024-10-07T12:13:42.930Z",
+    "addr": 1,
+    "tar": 1,
+    "author": 1
+  }
+}
+]

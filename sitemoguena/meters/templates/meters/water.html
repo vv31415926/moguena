@@ -1,0 +1,47 @@
+{% extends 'meters/base.html' %}
+
+{% block content %}
+    <h2> Водоснабжение </h2>
+
+    Сегодня: {{curdatetxt}} <br>
+    Адрес: {{ address_name }} <br><br>
+
+    {% if indication|length > 0 %}
+        <a href="{% url  'meters:add_water'  address_slug %}">Добавить показание</a>
+    {% else %}
+        <a href="{% url  'meters:new_water'  address_slug %}">Создать показание</a>
+    {% endif %}
+    <br>
+
+    <table class="table-meters">
+    <th>Снято</th>
+    <th>Горячая</th>
+    <th>Холодная</th>
+    <th>ИзмГВС </th>
+    <th>ИзмХВС </th>
+
+    {% for tr in indication %}
+        <tr >
+            <td> <a href="{{ tr.get_absolute_url }}">{{tr.date_reading}} </a></td>
+            <td> {{tr.hot}} </td>
+            <td> {{tr.cold}} </td>
+            <td>
+                {% if tr.difference %}
+                    {{ tr.difference.hot }}
+                {% else %}
+                    -
+                {% endif %}
+            </td>
+            <td>
+                {% if tr.difference %}
+                    {{ tr.difference.cold }}
+                {% else %}
+                    -
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+
+
+{% endblock %}

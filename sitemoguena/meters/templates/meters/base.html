@@ -1,0 +1,51 @@
+{% load static %}
+{% load meters_tags %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<link type="text/css" href="{% static 'meters/css/styles.css' %}" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="{% static 'mainapp/images/main.ico' %}" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<table class="table-page" border=0 cellpadding="0" cellspacing="0">
+    <tr>
+		<td valign=top>
+
+            {%  show_menu mainmenu  address_slug user %}
+
+            <table border=0 cellpadding="0" cellspacing="0">
+                <tr>
+                    <!-- Левый   столбец:  Тек дата  -->
+                    <td valign="top" class="left-chapters">
+                        <div class="address">
+                            <br>Сегодня:<br>
+                            <span class="text-accent">{{ curdatetxt }}</span>
+                            <br>
+                        </div>
+                    </td>
+                    <!-- Правый   столбец  Основные данные -->
+                    <td valign="top" class="content">
+                        <div class="content-text">
+
+                            {% block vibaddress %}
+                            {% endblock %}
+
+                            {% block content %}
+                            {% endblock %}
+                        </div>
+                        {% block navigation %}
+					    {% endblock %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

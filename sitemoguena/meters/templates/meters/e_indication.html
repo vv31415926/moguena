@@ -1,0 +1,15 @@
+{% extends 'meters/base.html' %}
+
+{% block content %}
+        {{indication.date_reading}} <br>
+        Тариф: {{indication.tar.name}} <br>
+        Адрес: {{address_name}} <br>
+        Автор: {{indication.author.username|default:'неизвестен'}} <br>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" >Сохранить</button>
+        </form>
+
+{% endblock %}
