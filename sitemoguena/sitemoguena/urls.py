@@ -25,8 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path( '',           include( 'mainapp.urls'                      ) ),
-    path( 'meters/',    include( 'meters.urls', namespace='meters'  ) ),
-    path( 'users/',     include( 'users.urls',  namespace='users' ) ),
+    path( 'meters/',    include( 'meters.urls',     namespace='meters'  ) ),
+    path( 'videoimg/',  include( 'videoimg.urls',   namespace='videoimg'  ) ),
+    path( 'users/',     include( 'users.urls',      namespace='users' ) ),
 
     path('social-auth/', include('social_django.urls', namespace='social')),
     path('captcha/', include('captcha.urls')),

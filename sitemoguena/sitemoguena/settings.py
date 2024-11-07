@@ -43,6 +43,8 @@ INSTALLED_APPS = [
 
     'social_django',
     'captcha',
+
+    'viseoimg.apps.VideoimgConfig',
 ]
 
 MIDDLEWARE = [
